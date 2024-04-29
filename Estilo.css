@@ -1,0 +1,14 @@
+* {
+  body {
+    min-width: 100vw;
+    min-height: 10vh;
+    background-color: black;
+  }
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  form {
+    text-align: center;
+  }
+}
