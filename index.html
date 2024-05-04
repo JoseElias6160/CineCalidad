@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CINECALIDAD </title>
     <link rel="stylesheet" href="Estilo.css">
-
-</head>
+    <title>CINECALIDAD--UNIREMINGTON</title>
+</header>
 
 <body>
+    <h1>CINE CALIDAD</h1>
 
-    <head class="header">
-        <div class="container">
-            <div class "logo">
-                <h1>CINECALIDAD UNIREMINGTON</h1>
-                <form action="">
-                    <input type="text" class="search-imput">
-                    <button class="BUSCAR">BUSCAR</button>
-                </form>
-                <div class="image-container">
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('INICIO')">INICIO</a></li>
+            <li><a href="#" onclick="mostrarSeccion('PELICULAS')">PELICULAS</a></li>
+            <li><a href="#" onclick="mostrarSeccion('SERIES')">SERIES</a></li>
+            <li><a href="#" onclick="mostrarSeccion('CONTACTANOS')">CONTACTANOS</a></li>
+        </ul>
+    </nav>
 
-                </div>
-                <script src="main.js"></script>
-            </div>
-            <nav class="menu">
-                <a href="#">INICIO</a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
 
-            </nav>
+    <section id="PELICULAS">
+        <div class="contenedor" id="contenedor"></div>
 
+        <div class="paginacion">
+            <button id="btnAnterior"> Atras</button>
+            <button id="btnSiguiente"> Siguiente</button>
         </div>
-        </div>
-    </head>
+    </section>
 
+    <section id="SERIES">
+        <div class="conte" id="conte"></div>
+
+        <div class="paginacion">
+            <button id="btnAnterior"> Atras</button>
+            <button id="btnSiguiente"> Siguiente</button>
+        </div>
+    </section>
+
+
+    <script src="main2.js"></script>
 </body>
 
 </html>

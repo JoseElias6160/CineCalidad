@@ -1,14 +1,103 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   body {
-    min-width: 100vw;
-    min-height: 10vh;
-    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    background: #e0e0e0;
+    color: #1d1d1d;
   }
-  h1 {
-    color: white;
+
+  body h1 {
+    color: #971c27;
+    width: 100%;
+    height: 60px;
+    background: #515151;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif, Arial, Helvetica, sans-serif;
+    padding-top: 20px;
     text-align: center;
   }
-  form {
+
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .contenedor .pelicula {
     text-align: center;
+  }
+
+  .contenedor .pelicula .titulo {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .contenedor .pelicula .poster {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+
+  .paginacion {
+    position: fixed;
+    bottom: 0;
+    background: #100a1f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .paginacion button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background: #971c27;
+    color: #fff;
+    border-radius: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: 0.3s ease all;
+  }
+
+  .paginacion button:hover {
+    background: #137c32;
+  }
+
+  .conte {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .conte .serie {
+    text-align: center;
+  }
+
+  .conte .serie .titulo {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .conte .series .poster {
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 15px;
   }
 }
