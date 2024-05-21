@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-image: url(../Image/fondo.jpg);
+}
+
+#detalles-pelicula {
+  background-image: url(../Image/fondo.jpg);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px 10px;
+  color: #ff0000;
+  font-size: 35px;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  height: 615px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  padding-left: 90%;
+  top: 40%;
+}
+
+button {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  height: 50px;
+  background: rgba(0, 255, 42, 0.918);
+  color: white;
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+button:hover {
+  background: white;
+  box-shadow: 0 0 20px black;
+  color: #000000;
+  cursor: pointer;
+}
+/* 
+button:focus {
+  text-shadow: #ff0000;
+  box-shadow: 0 0 20px black;
+} */
+
+.error-message {
+  color: red;
+  font-style: italic;
+  text-align: center;
+}
+
+.contenedor {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
