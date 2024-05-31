@@ -1,0 +1,96 @@
+/* Estilo para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ff0000;
+  margin-bottom: 30px;
+}
+
+/* Estilo para las celdas de la tabla */
+.table td {
+  padding: 8px;
+}
+
+/* Estilo específico para la celda que contiene la imagen de la película */
+.poster-cell img {
+  width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+}
+
+/* Estilo específico para la celda que contiene el ID de la película */
+.id-cell {
+  font-weight: bold;
+}
+
+/* Estilo específico para la celda que contiene el título de la película */
+.title-cell h2 {
+  margin: 0; /* Elimina el margen predeterminado del h2 */
+}
+
+/* Estilo específico para la celda que contiene la sinopsis de la película */
+.overview-cell p {
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+/* Estilo para la tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilo para las celdas de la tabla */
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilo para las filas pares */
+.table tr:nth-child(even) {
+  background-color: #0c0606;
+}
+
+/* Estilo para el encabezado de la tabla */
+.table th {
+  background-color: #362929;
+  font-weight: bold;
+}
+
+.botones {
+  text-align: center; /* Centrar el contenido de la celda */
+}
+
+.botones button {
+  background-color: rgb(139, 12, 12); /* Color de fondo del botón */
+  font-weight: bold;
+  font-size: 14px;
+  color: solid black; /* Color del texto del botón */
+  padding: 5px 10px; /* Espaciado interno del botón */
+  border: none; /* Eliminar borde del botón */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  display: block;
+  margin: auto;
+  margin-bottom: 14px;
+}
+
+.botones button:hover {
+  background-color: #ff0000; /* Cambia el color de fondo al pasar el mouse */
+  color: rgb(0, 0, 0); /* Cambia el color del texto al pasar el mouse */
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.id-cell input {
+  font-size: 16px;
+}
+
+.title-cell input {
+  font-size: 16px;
+}
+
+.puntuacion input {
+  font-size: 16px;
+}

@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CINECALIDAD </title>
     <link rel="stylesheet" href="./Styles/Estilo.css">
+    <link rel="stylesheet" href="./Styles/crudUsuario.css">
     <title>CINECALIDAD--UNIREMINGTON</title>
 </header>
 
 <body>
     <nav>
         <ul>
-            <li><a href="#" onclick="mostrarSeccion('INICIO')">INICIO😊</a></li>
             <li><a href="#" onclick="mostrarSeccion('PELICULAS')">PELICULAS📺</a></li>
             <li><a href="#" onclick="mostrarSeccion('SERIES')">SERIES📺</a></li>
-            <li><a href="#" onclick="mostrarSeccion('CONTACTANOS')">CONTACTANOS📱</a></li>
+            <li><a href="#" onclick="mostrarSeccion('CONTACTANOS')">CRUD API_REST ✏️</a></li>
         </ul>
     </nav>
 
-    <section id="INICIO">
-        <!--   <img src="Image/uni.png"> -->
+    <section id="CONTACTANOS">
+        <div id="contenedor_api">
+
+        </div>
+
     </section>
 
 
 
     <section id="PELICULAS">
-        <div class="contenedor" id="contenedor"></div>
 
+        <div class="contenedor" id="contenedor"></div>
 
         <div class="paginacion">
             <button id="btnAnterior"> Atras</button>
@@ -41,13 +44,26 @@
         <div class="conte" id="conte"></div>
 
         <div class="paginacion">
-            <button id="btnAnterior"> Atras</button>
-            <button id="btnSiguiente"> Siguiente</button>
+            <button id="btnAnt"> Atras</button>
+            <button id="btnSig"> Siguiente</button>
         </div>
     </section>
 
 
     <script src="JS/main2.js"></script>
+    <script src="JS/crud.js"></script>
+
+    <script>
+        var seccionPeliculas = document.getElementById('PELICULAS');
+        function mostrarPeliculas() {
+            var secciones = document.querySelectorAll('section');
+            secciones.forEach(function (seccion) {
+                seccion.style.display = 'none';
+            });
+            seccionPeliculas.style.display = 'block';
+        }
+        window.onload = mostrarPeliculas;
+    </script>
 
 </body>
 

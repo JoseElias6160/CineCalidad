@@ -33,7 +33,7 @@ const CargarPeliculas = async () => {
 
     if (respuesta.status === 200) {
       const datos = await respuesta.json();
-      
+
 
       let peliculas = "";
 
@@ -42,15 +42,17 @@ const CargarPeliculas = async () => {
         <div class="pelicula" id="${pelicula.id}">
             <a href="detalle_pelicula.html?id=${pelicula.id}"><img class="poster"  src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}"></a>
         </div>
-        <h3 class="titulo"> ${pelicula.title}</h3>
-        `;
+        <h3 class="titulo"> ${pelicula.title}
+        <p>⭐${pelicula.vote_average}⭐</p>
+        </h3>
+         `;
       });
       document.getElementById("contenedor").innerHTML = peliculas;
 
       // Agregar evento de clic a cada póster de película
       const posters = document.querySelectorAll('.pelicula');
       posters.forEach(poster => {
-        poster.addEventListener('click', function() {
+        poster.addEventListener('click', function () {
           const peliculaId = this.getAttribute('id');
           window.location.href = `detalle_pelicula.html?id=${peliculaId}`;
         });
@@ -67,6 +69,17 @@ const CargarPeliculas = async () => {
 CargarPeliculas();
 
 
+
+
+btnSig.addEventListener("click", () => {
+  pagina += 1;
+  CargarSeries();
+});
+
+btnAnt.addEventListener("click", () => {
+  if (pagina > 1) pagina -= 1;
+  CargarSeries();
+});
 
 const CargarSeries = async () => {
   try {
@@ -98,4 +111,3 @@ CargarSeries();
 
 
 
-  
