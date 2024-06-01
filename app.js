@@ -68,7 +68,7 @@ app.delete('/delete/:id', async (req, res) => {
   res.json('ELIMINADO CORRECTAMENTE');
 });
 
-app.listen(1000, () => {
-  console.log('Server is running on port 1000');
+app.listen(5500, () => {
+  console.log('Server is running on port 5500');
 });
 
